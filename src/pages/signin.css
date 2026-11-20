@@ -1,0 +1,89 @@
+body{
+    background-color: #F4F9FF;
+}
+
+.logo-auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+
+.logmain-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+    
+    
+}
+
+.login-email{
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #66A3BF;
+    display: inline-block;
+}
+
+
+.log-card{
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    border: 1px solid grey;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    background-color: white;
+}
+
+.log-card input{
+    width: 95%;
+    display: block;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 12px;
+    border: 1px solid grey;
+    outline: none;
+    cursor: pointer;
+    color: #030164;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.log-btn{
+    width: 95%;
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 20px;
+    background-color: #F4F9FF;
+    border: 1px solid #66A3BF;
+    color:#66A3BF;
+    font-size: 16px;
+    font-weight: 600;
+}
+.log-btn:hover{
+    background-color: #66A3BF;
+    color: #F4F9FF;
+}
+.login-footer{
+    text-align: center;
+    margin-top: 20px;
+    color: #030164;
+}
+.login-footer a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-footer a:hover{
+    text-decoration: underline;
+}
+
+

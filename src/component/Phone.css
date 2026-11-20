@@ -1,0 +1,47 @@
+.manage-content{
+    padding:60px 10px;
+}
+.manage-sec{
+    background-color: #F4F9FF;
+}
+
+.para-head2{
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 20px;
+    color: #66A3BF;
+    margin-bottom: 30px;
+}
+
+.head1{
+    color: #66A3BF;
+}
+
+.smart-hed{
+    color: #4274D9;;
+}
+
+.work-icon{
+    min-width: 55px;
+    height: 55px;
+    background-color: #66A3BF;
+    display: inline-flex;
+    border-radius: 12px;
+    color: #F4F9FF;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.work-item{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  
+}
+.mon-title{
+    color: #66A3BF;
+}
+.des-para{
+    color: #4274D9;
+}

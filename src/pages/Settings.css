@@ -1,0 +1,318 @@
+/* Main Settings Page */
+
+.settings-page {
+    margin-left: 250px;
+    padding: 30px;
+    min-height: 100vh;
+    background-color: #F4F9FF;
+}
+
+
+/* Page Header */
+
+.settings-page-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+
+.settings-header-icon {
+    width: 65px;
+    height: 65px;
+    background: #DCEBFF;
+    color: #4274D9;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.settings-page-header h2 {
+    color: #66A3BF; 
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.settings-page-header p {
+    color: #718096;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* Common Section Heading */
+
+.settings-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.settings-section-heading svg {
+    color: #66A3BF; 
+    font-size: 23px;
+}
+
+.settings-section-heading h3 {
+    color: #66A3BF; 
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* Account Settings Card */
+
+.settings-account-card {
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #E3F2FD;
+    box-shadow: 0 4px 12px rgba(3, 1, 100, 0.05);
+}
+
+
+/* Account Details */
+
+.settings-account-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.settings-field label {
+    display: block;
+    color: #22396F;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.settings-email-field label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.settings-input {
+    background: #F4F9FF;
+    border: 1px solid #DCE7F5;
+    border-radius: 9px;
+    padding: 12px 15px;
+    color: #030164;
+    font-size: 14px;
+    min-height: 44px;
+}
+
+
+/* Edit Profile Button */
+
+.settings-edit-btn {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: #4274D9;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 20px;
+    margin-top: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.settings-edit-btn:hover {
+    background: #030164;
+}
+
+
+/* Notification Settings Card */
+
+.settings-notification-card {
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #E3F2FD;
+    box-shadow: 0 4px 12px rgba(3, 1, 100, 0.05);
+    margin-top: 22px;
+}
+
+.notification-description {
+    color: #718096;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+
+/* Notification Options */
+
+.notification-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #E8EFF8;
+}
+
+.notification-option:last-child {
+    border-bottom: none;
+    padding-bottom: 5px;
+}
+
+.notification-info h4 {
+    color: #66A3BF; 
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.notification-info p {
+    color: #718096;
+    font-size: 13px;
+    margin: 0;
+}
+
+
+/* Toggle Switch */
+
+.notification-toggle {
+    width: 48px;
+    height: 26px;
+    min-width: 48px;
+    border: none;
+    border-radius: 30px;
+    background: #CBD5E1;
+    padding: 3px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.notification-toggle span {
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.notification-toggle.active {
+    background: #4274D9;
+}
+
+.notification-toggle.active span {
+    transform: translateX(22px);
+}
+
+.notification-toggle:focus-visible {
+    outline: 3px solid #91C8E4;
+    outline-offset: 3px;
+}
+
+
+
+.log-but{
+    margin-top: 22px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logout-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+    background: transparent;
+
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+
+    padding: 12px 20px;
+    width: auto;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: none;
+}
+
+
+.logout-item:hover{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+.logout-item:focus,
+.logout-item:active{
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+
+@media (max-width: 992px) {
+
+    .settings-page {
+        margin-left: 220px;
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .settings-page {
+        margin-left: 70px;
+        padding: 15px;
+    }
+
+    .settings-account-details {
+        grid-template-columns: 1fr;
+    }
+
+    .settings-page-header h2 {
+        font-size: 23px;
+    }
+
+    .settings-account-card,
+    .settings-notification-card {
+        padding: 18px;
+    }
+
+    .notification-option {
+        gap: 12px;
+    }
+
+    .notification-info p {
+        font-size: 12px;
+    }
+
+}

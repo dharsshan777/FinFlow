@@ -1,0 +1,115 @@
+.savings-modal-overlay {
+    position: fixed;
+    inset: 0;
+     background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 15px;
+}
+
+.savings-modal {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.savings-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.savings-modal-header h3 {
+    color: #030164;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.savings-modal-header p {
+    color: #777;
+    font-size: 13px;
+    margin: 0;
+}
+
+.savings-modal-close {
+    border: none;
+    background: #f1f5ff;
+    color: #030164;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.savings-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.savings-form-group label {
+    color: #030164;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.savings-form-group input {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #dce5f2;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.savings-form-group input:focus {
+    border-color: #4274D9;
+    box-shadow: 0 0 0 2px rgba(66, 116, 217, 0.1);
+}
+
+.savings-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.savings-cancel-btn,
+.savings-save-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.savings-cancel-btn {
+    background: #ffffff;
+    border: 1px solid #dce5f2;
+    color: #555;
+}
+
+.savings-save-btn {
+    background: #4274D9;
+    border: 1px solid #4274D9;
+    color: #ffffff;
+}
+
+.savings-save-btn:hover {
+    background: #315fbd;
+}
+
+@media (max-width: 480px) {
+    .savings-modal {
+        padding: 22px;
+    }
+}

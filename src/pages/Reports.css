@@ -1,0 +1,22 @@
+.reports-page {
+    margin-left: 250px;
+    padding: 25px;
+    background-color: #F4F9FF;
+    min-height: 100vh;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .reports-page {
+        margin-left: 220px;
+        padding: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .reports-page {
+        margin-left: 70px;
+        padding: 15px;
+    }
+}

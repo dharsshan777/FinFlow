@@ -1,0 +1,116 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(3, 1, 100, 0.15);
+}
+
+
+
+
+.sign1{
+   
+    color: white;
+    background-color: #66A3BF;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+.sign1:hover{
+    background-color: white;
+    color: #66A3BF;
+    border-color: #66A3BF;
+}
+
+
+.start1{
+  
+    color: white;
+    background-color: #66A3BF;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+.start1:hover{
+    background-color: white;
+    color: #66A3BF;
+    border-color: #66A3BF;
+}
+
+.ho1,.fo1,.ao1{
+    color: #4274D9;
+}
+
+
+
+
+
+
+/* LG screen */
+@media (min-width: 992px) {
+.navbar .navbar-collapse {
+justify-content: flex-end;
+}
+
+.navbar .navbar-nav {
+margin-left: auto;
+flex-direction: row;
+align-items: center;
+}
+}
+
+/* SM and MD screens */
+@media (max-width: 991.98px) {
+.navbar .navbar-collapse {
+width: 100%;
+text-align: left;
+}
+
+.navbar .navbar-nav {
+display: flex;
+flex-direction: column;
+align-items: flex-start !important;
+justify-content: flex-start !important;
+width: 100%;
+margin-left: 0 !important;
+margin-right: 0 !important;
+padding-left: 0;
+}
+
+.navbar .navbar-nav .nav-item {
+width: 100%;
+margin: 5px 0 !important;
+text-align: left !important;
+}
+
+.navbar .navbar-nav .nav-link {
+text-align: left !important;
+}
+
+.navbar .navbar-nav .btn {
+margin-left: 0 !important;
+}
+}
+
+
+.nav-link{
+    color: #4274D9;
+    text-decoration: none;
+}
+
+.nav-link.active{
+    color: #66A3BF;
+    border-bottom: 2px solid #66A3BF;
+}

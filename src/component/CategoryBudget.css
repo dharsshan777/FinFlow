@@ -1,0 +1,209 @@
+/* Main Container */
+
+.category-budget-container {
+    margin-top: 30px;
+}
+
+/* Heading */
+
+.category-budget-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.category-budget-heading h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #66A3BF;
+    margin-bottom: 5px;
+}
+
+
+
+/* Add Budget Button */
+
+.add-budget-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 10px 16px;
+    background-color: #66A3BF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.add-budget-btn:hover {
+    background-color: #4274D9;
+}
+
+/* Category Grid */
+
+.category-budget-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+/* Category Card */
+
+.category-budget-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e5edf7;
+    border-radius: 10px;
+}
+
+/* Card Header */
+
+.category-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.category-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #030164;
+    margin: 0;
+}
+
+/* Edit and Delete Buttons */
+
+.category-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.category-card-actions button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.edit-budget-btn {
+    background-color: #e3f2fd;
+    color: #4274D9;
+}
+
+.delete-budget-btn {
+    background-color: #fff0f0;
+    color: #e05252;
+}
+
+/* Budget Details */
+
+.category-budget-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 18px;
+}
+
+.category-budget-details p {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 5px;
+}
+
+.category-budget-details h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #030164;
+    margin: 0;
+}
+
+/* Remaining Amount */
+
+.category-budget-remaining {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.category-budget-remaining span {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.category-budget-remaining strong {
+    font-size: 13px;
+    font-weight: 600;
+    color: #16a36a;
+}
+
+/* Progress Bar */
+
+.category-progress-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.category-progress-bar {
+    flex: 1;
+    height: 7px;
+    background-color: #eaf0f8;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.category-progress-fill {
+    height: 100%;
+    background-color: #66A3BF;
+    border-radius: 5px;
+}
+
+.category-progress-section span {
+    font-size: 12px;
+    color: #64748b;
+    white-space: nowrap;
+}
+
+/* Budget Month */
+
+.budget-month {
+    font-size: 12px;
+    color: #94a3b8;
+    margin: 12px 0 0;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .category-budget-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+    .category-budget-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .add-budget-btn {
+        width: 100%;
+    }
+
+    .category-budget-card {
+        padding: 16px;
+    }
+}

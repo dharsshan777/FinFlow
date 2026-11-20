@@ -1,0 +1,263 @@
+
+/* Common Sections */
+.about-hero,
+.about-who,
+.about-services,
+.about-mission,
+.about-benefits,
+.about-cta {
+    padding: 65px 0;
+}
+
+.about-hero h1,
+.about-who h2,
+.about-section-heading h2,
+.about-benefits h2 {
+    color: #66A3BF;
+    font-weight: 700;
+}
+
+.about-hero p,
+.about-who p,
+.about-section-heading p,
+.service-card p,
+.mission-card p,
+.about-cta p {
+    color: #030164;
+    line-height: 1.7;
+}
+
+
+/* About Hero */
+.about-hero {
+    background: #F4F9FF;
+    padding-top: 100px;
+}
+
+.about-hero h1 {
+    font-size: 42px;
+}
+
+.about-hero h1 span {
+    color: #4274D9;
+}
+
+.about-hero p {
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.about-hero-img {
+    max-width: 500px;
+    width: 100%;
+}
+
+
+/* Who We Are */
+.about-who-img {
+    max-width: 400px;
+    width: 100%;
+}
+
+.about-who h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Section Headings */
+.about-section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-section-heading p {
+    margin-top: 10px;
+}
+
+
+/* What We Do Section */
+.about-services {
+    background: #F4F9FF;
+}
+
+
+/* What We Do Cards */
+.service-card {
+    height: 100%;
+    background: #fff;
+    border: 1px solid #e3edf8;
+    border-radius: 15px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(3, 1, 100, 0.07);
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(3, 1, 100, 0.12);
+}
+
+.service-icon {
+    width: 65px;
+    height: 65px;
+    background: #E3F2FD;
+    color: #4274D9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto 20px;
+}
+
+.service-card h4 {
+    color: #66A3BF;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+
+/* Mission and Vision Section */
+.about-mission {
+    background: #fff;
+}
+
+
+/* Mission and Vision Cards */
+.mission-card {
+    height: 100%;
+    background: #F4F9FF;
+    border: 1px solid #e3edf8;
+    border-radius: 15px;
+    padding: 35px 30px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(3, 1, 100, 0.07);
+    transition: 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(3, 1, 100, 0.12);
+}
+
+.mission-icon {
+    width: 65px;
+    height: 65px;
+    background: #E3F2FD;
+    color: #4274D9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto 20px;
+}
+
+.mission-card h3 {
+    color: #030164;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.mission-card p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+
+/* Why Choose Us */
+.about-benefits h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.benefit-item svg {
+    color: #4274D9;
+    font-size: 21px;
+    flex-shrink: 0;
+}
+
+
+/* Call to Action */
+.about-cta {
+    background: #F4F9FF;
+    text-align: center;
+}
+
+.about-cta h2 {
+    color: #030164;
+    font-weight: 700;
+}
+
+.about-cta p {
+    margin: 15px 0 25px;
+}
+
+.about-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #4274D9;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.about-cta-btn:hover {
+    background: #030164;
+    color: white;
+}
+
+
+/* Responsive Design */
+@media (max-width: 767px) {
+
+    .about-hero,
+    .about-who,
+    .about-services,
+    .about-mission,
+    .about-benefits,
+    .about-cta {
+        padding: 45px 0;
+    }
+
+    .about-hero {
+        padding-top: 100px;
+    }
+
+    .about-hero h1 {
+        font-size: 32px;
+    }
+
+    .about-hero-img {
+        margin-top: 25px;
+    }
+
+    .about-who-img {
+        margin-bottom: 25px;
+    }
+
+    .service-card,
+    .mission-card {
+        padding: 30px 20px;
+    }
+}

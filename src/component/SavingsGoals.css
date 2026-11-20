@@ -1,0 +1,241 @@
+/* Main Section */
+.savings-goals-section {
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Section Header */
+.savings-goals-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.savings-goals-header h2 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #66A3BF;
+    margin-bottom: 6px;
+}
+
+/* Add Savings Button */
+.add-savings-goal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #66A3BF;
+    color: white;
+    border: none;
+    padding: 11px 17px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.add-savings-goal-btn:hover {
+    background: #315fbd;
+}
+
+/* Goals Grid */
+.savings-goals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* Goal Card */
+.savings-goal-card {
+    background: #ffffff;
+    padding: 22px;
+    border: 1px solid #e5edf7;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+/* Card Header */
+.savings-goal-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+/* Goal Name */
+.savings-goal-card-header h3 {
+    color: #030164;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+    word-break: break-word;
+}
+
+/* Card Actions */
+.savings-goal-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.savings-goal-actions button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 7px;
+    background: #f4f7fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 17px;
+    color: #4274D9;
+    transition: 0.3s;
+}
+
+.savings-goal-actions button:hover {
+    background: #e3f2fd;
+}
+
+.savings-goal-actions button:last-child {
+    color: #e05252;
+}
+
+.savings-goal-actions button:last-child:hover {
+    background: #fff0f0;
+}
+
+/* Target Month */
+.savings-goal-month {
+    color: #8993a4;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+/* Amount Details */
+.savings-goal-amounts {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.savings-goal-amounts span {
+    font-size: 13px;
+    color: #7b8494;
+}
+
+.savings-goal-amounts h4 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #030164;
+    margin-top: 7px;
+}
+
+/* Progress Information */
+.savings-progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.savings-progress-info span {
+    color: #596579;
+    font-size: 13px;
+}
+
+/* Progress Bar */
+.savings-progress-bar {
+    width: 100%;
+    height: 9px;
+    background: #e8eef7;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.savings-progress-fill {
+    height: 100%;
+    background: #66A3BF;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+/* Remaining Amount */
+.savings-goal-remaining {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #4274D9;
+    font-size: 13px;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid #edf1f7;
+}
+
+/* Empty Savings Goals */
+.no-savings-goals {
+    grid-column: 1 / -1;
+    background: #ffffff;
+    border: 1px dashed #cbdaf0;
+    border-radius: 14px;
+    padding: 40px 20px;
+    text-align: center;
+    color: #6b7280;
+}
+
+.no-savings-goals svg {
+    font-size: 35px;
+    color: #4274D9;
+    margin-bottom: 12px;
+}
+
+.no-savings-goals h3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #030164;
+    margin-bottom: 8px;
+}
+
+.no-savings-goals p {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .savings-goals-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .savings-goals-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .add-savings-goal-btn {
+        width: 100%;
+    }
+
+    .savings-goal-card {
+        padding: 17px;
+    }
+
+    .savings-goal-amounts h4 {
+        font-size: 17px;
+    }
+
+    .savings-goal-card-header h3 {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,133 @@
+.needs-wants-section {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border: 1px solid #E3F2FD;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(3, 1, 100, 0.05);
+    margin-bottom: 25px;
+}
+
+.needs-wants-heading h3 {
+    color: #66A3BF;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.needs-wants-heading p {
+    color: #7B8794;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.needs-wants-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.needs-wants-card {
+    padding: 22px;
+    border: 1px solid #E3F2FD;
+    border-radius: 12px;
+    background-color: #F9FCFF;
+}
+
+.needs-wants-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #22396F;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.needs-wants-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.needs-icon {
+    background-color: #E3F2FD;
+    color: #4274D9;
+}
+
+.wants-icon {
+    background-color: #EAF5FC;
+    color: #398EBA;
+}
+
+.needs-wants-card h2 {
+    color: #030164;
+    font-size: 27px;
+    font-weight: 700;
+    margin: 22px 0 5px;
+}
+
+.needs-wants-card > p {
+    color: #7B8794;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #64748B;
+    font-size: 13px;
+}
+
+.progress-info strong {
+    color: #030164;
+}
+
+.progress-track {
+    width: 100%;
+    height: 9px;
+    background-color: #E8F0FA;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+.needs-fill {
+    background-color: #4274D9;
+}
+
+.wants-fill {
+    background-color: #91C8E4;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .needs-wants-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .needs-wants-section {
+        padding: 18px;
+    }
+
+    .needs-wants-card {
+        padding: 18px;
+    }
+
+    .needs-wants-card h2 {
+        font-size: 23px;
+    }
+}

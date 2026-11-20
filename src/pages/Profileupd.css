@@ -1,0 +1,104 @@
+body {
+    background-color: #F4F9FF;
+}
+
+.profile-setup-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 25px 15px;
+
+}
+
+.profile-setup-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0px 8px 30px rgba(3, 1, 100, 0.12);
+}
+
+.profile-logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: #4274D9;
+}
+
+.profile-avatar {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    font-size: 22px;
+    background-color: #E3F2FD;
+    color: #030164;
+    margin-top: 20px;
+
+}
+
+.profile-setup-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #030164;
+    margin-bottom: 10px;
+
+}
+
+.profile-description{
+    font-size: 14px;
+    color: #030164;
+    margin-bottom: 20px;
+}
+
+.profile-setup-card input{
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid grey;
+    border-radius: 12px;
+    outline: none;
+    font-size: 15px;
+    color: #030164;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.profile-setup-card input:focus{
+    border-color: #4274D9;
+    box-shadow: 0 0 0 3px rgba(66,116,217,0.12);
+}
+
+.profile-note{
+    padding: 8px;
+    background-color: #4274D9;
+    color: #030164;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 5px 0 22px;
+    background-color: #90CAF9;
+}
+
+.profile-card-btn{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid grey;
+    border-radius: 12px;
+    font-size: 16x;
+    font-weight: 600;
+    color: #030164;
+    background-color: white;
+    transition: background 0.2s ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.profile-card-btn:hover{
+    background-color: #030164;
+    color: #F4F9FF;
+}

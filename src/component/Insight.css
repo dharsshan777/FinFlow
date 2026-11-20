@@ -1,0 +1,31 @@
+.home-card {
+  background-color: #ffffff;
+  border: 1px solid #E0EAFA;
+  border-radius: 15px;
+  padding: 25px 15px;
+  text-align: center;
+  height: 100%;
+
+  /* Bottom shadow */
+  box-shadow: 0px 8px 15px -5px rgba(66, 116, 217, 0.25);
+
+  transition: all 0.3s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 20px -5px rgba(66, 116, 217, 0.35);
+}
+    .card-icon{
+        font-size:xxx-large;
+        color: #AEE2FF;
+    
+    }
+
+    .card-para{
+        line-height: 1.8;
+        color:#086288;
+    }
+    .card-title{
+        color: #030164;
+    }

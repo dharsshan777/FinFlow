@@ -1,0 +1,115 @@
+.hero-1{
+    margin-left: 100px;
+}
+
+.hero-section {
+  width: 100%;
+  min-height: 70vh;
+  background-color:#F4F9FF;
+  margin-top: 35px;
+  
+}
+.hero-1{
+  display: inline-block;
+  color: #4274D9;
+  background-color: #E3F2FD;
+  border-radius: 15px;
+  padding:5px 10px;
+  margin-top: 30px;
+}
+
+/* welocme */
+@media  (max-width:768px){
+  .hero-1{
+     max-width: 100%;
+    white-space: normal;
+    width: fit-content;
+  }
+}
+
+.mon,.fut{
+  margin-left: 100px;
+}
+.mon{
+  color:#66A3BF;
+}
+.fut{
+  color: #4274D9;
+}
+
+.hero-para{
+  color: #66A3BF;
+  font-size: large;
+  margin-left: 100px;
+  line-height: 1.8;
+  width: 75%;
+
+}
+
+
+
+.start2{
+    color: white;
+    background-color: #66A3BF;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 100px;
+}
+
+.start2:hover{
+    background-color: white;
+    color: #66A3BF;
+    border-color: #66A3BF;
+}
+
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img1 {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+@media (min-width:576px) and (max-width:991px){
+  .hero-img1 img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+}
+
+/* MD screen: 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  @media (max-width: 767.98px) {
+
+    .hero-1,
+    .mon,
+    .fut,
+    .hero-para,
+    .start2 {
+        margin-left: 0;
+    }
+
+    .hero-para {
+        width: 100%;
+    }
+
+    .hero-cont {
+        padding: 0 20px;
+    }
+
+}
+}

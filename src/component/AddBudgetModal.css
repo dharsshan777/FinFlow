@@ -1,0 +1,152 @@
+.budget-modal-overlay {
+    position: fixed;
+    inset: 0;
+     background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 15px;
+}
+
+.budget-modal {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+    animation: budgetModalOpen 0.25s ease;
+}
+
+@keyframes budgetModalOpen {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.budget-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.budget-modal-header h3 {
+    color: #030164;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.budget-modal-header p {
+    color: #718096;
+    font-size: 14px;
+    margin: 0;
+}
+
+.budget-modal-close {
+    border: none;
+    background: #f1f5fb;
+    color: #030164;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.budget-modal-close:hover {
+    background: #e3f2fd;
+}
+
+.budget-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.budget-form-group label {
+    color: #030164;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.budget-form-group input,
+.budget-form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #dce5f0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    color: #22396f;
+    background: #ffffff;
+}
+
+.budget-form-group input:focus,
+.budget-form-group select:focus {
+    border-color: #4274D9;
+    box-shadow: 0 0 0 3px rgba(66, 116, 217, 0.12);
+}
+
+.budget-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.budget-cancel-btn,
+.budget-save-btn {
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.budget-cancel-btn {
+    background: #ffffff;
+    color: #030164;
+    border: 1px solid #dce5f0;
+}
+
+.budget-cancel-btn:hover {
+    background: #f4f9ff;
+}
+
+.budget-save-btn {
+    background: #4274D9;
+    color: #ffffff;
+    border: none;
+}
+
+.budget-save-btn:hover {
+    background: #315fbd;
+}
+
+@media (max-width: 480px) {
+    .budget-modal {
+        padding: 22px 18px;
+    }
+
+    .budget-modal-header h3 {
+        font-size: 19px;
+    }
+
+    .budget-modal-actions button {
+        flex: 1;
+    }
+}
