@@ -4,7 +4,7 @@ import DashboardHeader from '../component/DashboardHeader';
 import './Transaction.css';
 import QuickActionModel from '../component/QuickActionModel';
 
-import { FiSearch, FiArrowUpRight, FiArrowDownRight, FiRepeat } from 'react-icons/fi';
+import { FiSearch } from 'react-icons/fi';
 import { MdEdit, MdDeleteOutline } from 'react-icons/md';
 
 export default function Transaction() {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './CategoryBudget.css';
 import './BudgetAlerts.css';
 
@@ -92,36 +92,24 @@ export default function CategoryBudget() {
     }, []);
 
     // Calculate category-wise spending
-    const getCategorySpent = (budgetItem) => {
+    const getCategorySpent = useCallback((budgetItem) => {
+    return transactions
+        .filter((item) => {
+            const transactionMonth = item.date
+                ? item.date.substring(0, 7)
+                : '';
 
-        return transactions
-
-            .filter((item) => {
-
-                const transactionMonth = item.date
-                    ? item.date.substring(0, 7)
-                    : '';
-
-                return (
-
-                    item.type === 'expense' &&
-
-                    item.category?.toLowerCase() ===
+            return (
+                item.type === 'expense' &&
+                item.category?.toLowerCase() ===
                     budgetItem.category.toLowerCase() &&
-
-                    transactionMonth === budgetItem.month
-
-                );
-
-            })
-
-            .reduce((total, item) => {
-
-                return total + Number(item.amount || 0);
-
-            }, 0);
-
-    };
+                transactionMonth === budgetItem.month
+            );
+        })
+        .reduce((total, item) => {
+            return total + Number(item.amount || 0);
+        }, 0);
+}, [transactions]);
 
     // Budget Alert Logic
     useEffect(() => {
@@ -206,7 +194,7 @@ export default function CategoryBudget() {
 
         });
 
-    }, [categoryBudgets, transactions, userEmail]);
+   }, [categoryBudgets, transactions, userEmail, getCategorySpent]);
 
     // Automatically remove notifications
     useEffect(() => {

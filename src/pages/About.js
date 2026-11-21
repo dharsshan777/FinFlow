@@ -9,10 +9,10 @@ import {
     FiTarget,
     FiTrendingUp,
     FiDollarSign,
-    FiCheckCircle
+   
 } from 'react-icons/fi';
 
-import { MdOutlineArrowRightAlt } from 'react-icons/md';
+
 
 export default function About() {
 

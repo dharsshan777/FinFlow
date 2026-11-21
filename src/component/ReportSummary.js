@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './ReportSummary.css';
 
-import {
-    FiDollarSign,
-    FiTrendingDown,
-    FiTrendingUp,
-    FiCreditCard
-} from 'react-icons/fi';
+
 
 export default function ReportSummary() {
 

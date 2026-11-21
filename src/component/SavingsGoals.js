@@ -4,7 +4,6 @@ import './SavingsGoals.css';
 import {
     FiPlus,
     FiEdit2,
-    FiTrendingUp,
     FiTarget
 } from 'react-icons/fi';
 

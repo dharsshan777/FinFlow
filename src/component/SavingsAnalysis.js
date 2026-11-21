@@ -3,9 +3,7 @@ import './SavingsAnalysis.css';
 
 import {
     FiTarget,
-    FiTrendingUp,
-    FiDollarSign,
-    FiCheckCircle
+   
 } from 'react-icons/fi';
 
 export default function SavingsAnalysis() {

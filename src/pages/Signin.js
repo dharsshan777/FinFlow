@@ -58,70 +58,70 @@ export default function Signin() {
             navigate('/profileupd');
         }
     }
-return (
-    <div>
+    return (
+        <div>
 
-        <Navbar></Navbar>
+            <Navbar></Navbar>
 
-        <div className='logmain-cont'>
-
-
-
-            <form className='log-card' onSubmit={handlesub}>
-
-                <div className='logo-auth'>
+            <div className='logmain-cont'>
 
 
-                    <img src='/images/expensewise-logo.png'
-                        alt='Logo image'
-                        width='55'
-                        height='55'>
-                    </img>
+
+                <form className='log-card' onSubmit={handlesub}>
+
+                    <div className='logo-auth'>
+
+                        <img
+                            src='/images/expensewise-logo.png'
+                            alt='FinFlow logo'
+                            width='55'
+                            height='55'
+                        />
 
 
-                    <div className="d-flex align-items-center">
-                        <span className="fw-bold fs-4 logo-brand" style={{ color: '#1C325B' }}>
-                           Fin
-                        </span>
+                        <div className="d-flex align-items-center">
+                            <span className="fw-bold fs-4 logo-brand" style={{ color: '#1C325B' }}>
+                                Fin
+                            </span>
 
-                        <span className="fw-bold fs-4 logo-brand" style={{ color: '#6A669D' }}>
-                            Flow
-                        </span>
+                            <span className="fw-bold fs-4 logo-brand" style={{ color: '#6A669D' }}>
+                                Flow
+                            </span>
+                        </div>
+
                     </div>
 
-                </div>
+
+                    <h6 className='login-email'>Login with email</h6>
 
 
-                <h6 className='login-email'>Login with email</h6>
+                    <input type='email' placeholder='email' name='email' value={form.email} onChange={fun}></input>
 
+                    <input type='password' placeholder='password' name='password' value={form.password} onChange={fun}></input>
 
-                <input type='email' placeholder='email' name='email' value={form.email} onChange={fun}></input>
-
-                <input type='password' placeholder='password' name='password' value={form.password} onChange={fun}></input>
-
-                <button type='submit' className='log-btn'>LOG IN</button>
+                    <button type='submit' className='log-btn'>LOG IN</button>
 
 
 
-                <p className='login-footer'>Don't have an account?
+                    <p className='login-footer'>Don't have an account?
 
-                    <Link to={'/signup'} className='signup-link'>Sign up</Link>
-                </p>
+                        <Link to={'/signup'} className='signup-link'>Sign up</Link>
+                    </p>
 
 
-            </form>
+                </form>
 
+
+
+
+
+
+            </div>
 
 
 
 
 
         </div>
-
-
-
-
-
-    </div>
-)
+    )
 }
